@@ -93,7 +93,25 @@
 		p
 			font-size (13/14)rem
 			padding-left 20px
-			
-@media (max-width 768px)
+
+				
+@media (min-width 481px) and (max-width 768px)
+	.jobs-blocks
+		flex-direction column
 	.block
-		height 200px
+		height 400px
+
+@media (max-width 320px)
+	.section__title
+		width 90%
+	.jobs-blocks
+		flex-direction column
+@media (min-width 321px) and (max-width 480px)
+	.section__title
+		width 90%
+	.jobs-blocks
+		flex-direction column
+		
+@media (min-width 320px) and (max-width 768px)
+	.jobs
+		background url('../../blocks/b-jobs/b-jobs/jobs-bg.jpg') no-repeat -150px 1700px

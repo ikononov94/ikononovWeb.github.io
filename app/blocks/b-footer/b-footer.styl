@@ -24,7 +24,7 @@
 	.block-center
 	.block-right
 		span
-			margin-bottom 35px
+			margin-bottom 40px
 		img
 			margin-bottom 20px
 		p 
@@ -35,6 +35,10 @@
 		.social
 			img
 				margin 0 10px
+				transform rotate(0deg)
+				transition all .5s ease
+				&:hover
+					transform rotate(360deg)
 		
 .text-left
 	text-align left
@@ -58,3 +62,31 @@
 		margin-left 20px
 	.block-right
 		margin-right 20px
+
+@media (max-width 480px)
+	.footer-blocks
+		flex-wrap wrap
+		span
+			font-size 1.4rem
+		p
+			font-size 1.4rem
+		.block-left
+			img
+				margin-bottom 10px
+		.block-center
+		.block-right
+			span
+				margin-bottom 50px !important
+			img
+				margin-bottom 20px !important
+		.block-right
+			margin-left 20px 
+			text-align left
+			p
+				text-align left !important
+
+@media (min-width 321px) and (max-width 480px)
+	.footer-blocks
+		.block-center
+			margin-right 20px
+	

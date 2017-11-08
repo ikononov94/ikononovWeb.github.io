@@ -72,3 +72,32 @@
 	
 .btn-form
 	float right
+	
+@media (max-width 320px)
+	.reviews-blocks
+		flex-direction column
+		.block-right
+			width 80%
+			margin 0 0 0 20px
+			.right-photo
+				span
+					line-height 40px
+	.button-size-m 
+		padding 10px 22.5px
+
+@media (min-width 321px) and (max-width 480px)
+	.reviews-blocks
+		flex-direction column
+		.block-right
+			width 80%
+			margin 0 0 0 20px
+			.right-photo
+				span
+					line-height 40px
+	.button-size-m 
+		padding 10px 22.5px
+		
+@media (min-width 768px) and (max-width 768px)
+	.reviews-blocks
+		.block-right
+			width 50%

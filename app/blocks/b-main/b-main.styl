@@ -83,22 +83,55 @@
 	color #fff
 	text-decoration none
 	border-radius 5px
+	transition all 1s ease
 	&-size-l
 		font-size (25/14)rem
 		letter-spacing 2px
 		font-weight bold
 		padding 20px 30px
+	&:hover
+		background-color darken(btncolor, 20%)
 	
 .swiper-container-horizontal>.swiper-pagination-bullets
 .swiper-pagination-custom
 .swiper-pagination-fraction
 	bottom 150px
 	
-@media (max-width 1024px)
+@media (max-width 320px)
 	.main-title
-		h1
-			font-size (30.08/12)rem
+		width 90%
 	.main-description
-		font-size  (15/12)rem
-	.button-size-l
-		font-size (15/12)rem
+		width 70%
+		padding-bottom 50px
+	.swiper
+		min-height 800px
+	.swiper-container
+		height 800px
+	
+	.swiper-container-horizontal>.swiper-pagination-bullets
+	.swiper-pagination-custom
+	.swiper-pagination-fraction
+		bottom 70px
+
+@media (min-width 321px) and (max-width 480px)
+	.main-title
+		width 90%
+	.main-description
+		width 70%
+		padding-bottom 50px
+	.swiper
+		min-height 800px
+	.swiper-container
+		height 800px
+	
+	.swiper-container-horizontal>.swiper-pagination-bullets
+	.swiper-pagination-custom
+	.swiper-pagination-fraction
+		bottom 40px
+		
+
+@media (min-width 481px) and (max-width 920px)
+	.swiper-container-horizontal>.swiper-pagination-bullets
+	.swiper-pagination-custom
+	.swiper-pagination-fraction
+		bottom 20px
