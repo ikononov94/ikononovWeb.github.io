@@ -1,6 +1,7 @@
 .jobs
 	background url('../../blocks/b-jobs/b-jobs/jobs-bg.jpg') no-repeat -150px -320px
 	border-bottom 2px solid #b5c4c4
+	padding-bottom 40px
 .section__title
 	width 55%
 	margin 0 auto
@@ -30,7 +31,7 @@
 	background-color bgcolorMF
 	height 320px
 	flex 1
-	margin 0 20px 20px 0
+	margin 0 20px 20px 20px
 	cursor pointer
 	&:hover > .block-1
 	&:hover > .block-2
@@ -77,3 +78,22 @@
 	span
 		padding-left 55px
 		
+@media (max-width 1024px)
+	.block
+		height 250px
+	.block-1
+	.block-2
+	.block-3
+	.block-4
+	.block-5
+	.block-6
+		h5
+			font-size (15/14)rem
+			padding-left 20px
+		p
+			font-size (13/14)rem
+			padding-left 20px
+			
+@media (max-width 768px)
+	.block
+		height 200px
