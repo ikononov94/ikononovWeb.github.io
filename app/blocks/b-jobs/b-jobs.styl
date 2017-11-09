@@ -1,7 +1,7 @@
 .jobs
-	background url('../../blocks/b-jobs/b-jobs/jobs-bg.jpg') no-repeat -150px -320px
+	background url('../../blocks/b-jobs/b-jobs/jobs-bg.jpg') no-repeat -150px -300px
 	border-bottom 2px solid #b5c4c4
-	padding-bottom 40px
+	padding-bottom 50px
 .section__title
 	width 55%
 	margin 0 auto
@@ -9,38 +9,33 @@
 	padding 60px 0
 	h2
 		margin 0
-		font-size (42.9/14)rem
+		font-size 3.06rem
 		text-transform uppercase
-		letter-spacing 1rem
+		letter-spacing .6rem
 		color bgcolorMF
 		font-weight 100
-	span
-		img
-			padding 25px 0
+	img
+		padding 25px 0
 	p
 		margin 0
 		color #8198a0
-		font-size (18/14)rem
+		font-size 1.3rem
 		
 .jobs-blocks
 	display flex
 	flex-direction row
 	flex-wrap wrap
+	justify-content space-around
 .block
 	position relative
 	background-color bgcolorMF
 	height 320px
-	flex 1
-	margin 0 20px 20px 20px
+	flex-basis 440px
+	margin-bottom 20px
 	cursor pointer
-	&:hover > .block-1
-	&:hover > .block-2
-	&:hover > .block-3
-	&:hover > .block-4
-	&:hover > .block-5
-	&:hover > .block-6
+	&:hover > .block-hid
+		opacity 1
 		overflow visible
-		height 105px
 	.block-logo
 		display block
 		position absolute
@@ -50,67 +45,52 @@
 		left 0
 		margin auto
 		
-.block-1
-.block-2
-.block-3
-.block-4
-.block-5
-.block-6
+.block-hid
 	width 100%
-	height 0px
+	height 105px
+	opacity 0
 	background-color #d4d7d8
 	position absolute
 	bottom 0
 	overflow hidden
-	transition all .2s ease
+	transition all 1s ease
 	h5
 		margin 0
-		font-size (18/14)rem
+		font-size 1.3rem
 		color bgcolorMF
 		text-transform uppercase
 		padding 15px 0 10px 55px
 	p
 		color #7b7b7b
 		text-transform uppercase
-		font-size (16/14)rem
+		font-size 1.14rem
 		margin 0
 		padding 10px 0 15px 55px
 	span
 		padding-left 55px
-		
+
+
 @media (max-width 1024px)
 	.block
-		height 250px
-	.block-1
-	.block-2
-	.block-3
-	.block-4
-	.block-5
-	.block-6
+		height 350px
+	.block-hid
 		h5
-			font-size (15/14)rem
+			font-size 1.07rem
 			padding-left 20px
 		p
-			font-size (13/14)rem
+			font-size 0.93rem
 			padding-left 20px
 
 				
 @media (min-width 481px) and (max-width 768px)
-	.jobs-blocks
-		flex-direction column
 	.block
-		height 400px
-
+		height 350px
 @media (max-width 320px)
 	.section__title
 		width 90%
-	.jobs-blocks
-		flex-direction column
 @media (min-width 321px) and (max-width 480px)
 	.section__title
 		width 90%
-	.jobs-blocks
-		flex-direction column
 		
 @media (min-width 320px) and (max-width 768px)
 	.jobs

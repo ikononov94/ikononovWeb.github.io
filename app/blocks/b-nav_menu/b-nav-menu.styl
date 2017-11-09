@@ -9,26 +9,30 @@
 	max-width 1400px
 	margin 0 auto
 	position relative
-.nav__logo
-	float left
-	padding-top 39px
-
+.nav-blocks
+	display flex
+	flex-direction row
+	justify-content space-around
+	align-items center
+	height 120px
 .menu__ul
 	margin 0
+	padding 0
 	display flex
-	flex-wrap nowrap
 	justify-content space-around
+	height 120px
 	
 	li
 		margin-right 20px
 		text-align center
-		flex: 1
-		font-size (14.47/14)rem
+		width 120px
+		font-size 1.03rem
 		list-style none
+		&:last-child
+			margin-right 0
 		
 		a
 			display block
-			width 100%
 			height 67px
 			text-decoration none
 			color menucolor
@@ -44,11 +48,9 @@
 				color #6b848c
 						
 .nav__phone
-	float right
-	padding-top 26px
 	a
 		display block
-		font-size (24/14)rem
+		font-size 1.7rem
 		font-weight  700
 		color #ff8207
 		text-decoration none
@@ -70,8 +72,6 @@
 		a:hover > span
 			transform rotate(180deg)
 			
-.span--focused
-	transform rotate(90deg)
 			
 .nav__hidmnu
 	display none
@@ -98,24 +98,16 @@
 				text-decoration none
 				font-size 1.8rem
 		
-@media (max-width 1024px)
+			
+@media (max-width 1196px)
 	html
 		font-size 12px
-	.menu__ul
-		padding 0
-			
-	.nav__logo
-		margin-left 10px
-		img
-			width 80%
-		
-	.nav__phone
-		margin-right 10px
-
-			
-@media (max-width 768px)
-	html
-		font-size 12px
+	.nav
+		height 80px
+	.nav-blocks
+		height 45px
+	.nav-blocks
+		justify-content space-between
 	.nav__phone
 		display none
 	.nav__menu
@@ -129,6 +121,6 @@
 	.nav__burg
 		display block
 		
-@media (max-width 320px)
+@media (min-width 0px) and (max-width 480px)
 	html
 		font-size 8px

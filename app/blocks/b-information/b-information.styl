@@ -1,18 +1,18 @@
 .information
-	padding-bottom 60px
+	padding-bottom 40px
 .information__blocks
 	display: flex
 	flex-direction row
-	flex-wrap nowrap
-	&:last-child
-		margin-top 60px
+	flex-wrap wrap
+	justify-content space-around
 
 .block-info
-	flex 1
+	flex-basis 330px
 	text-align center
+	margin-bottom 20px
 	h5
 		color bgcolorMF
-		font-size (16/14)rem
+		font-size 1.14rem
 		text-transform uppercase
 		letter-spacing 2px
 	span
@@ -21,18 +21,6 @@
 		margin 0 auto
 		color #8198a0
 
-@media (max-width 320px)
-	.information__blocks
-		flex-direction column
-		&:last-child
-			margin-top 20px
-	.block-info
-		margin-top 20px
+
 		
-@media (min-width 321px) and (max-width 480px)
-	.information__blocks
-		flex-direction column
-		&:last-child
-			margin-top 20px
-	.block-info
-		margin-top 20px
+		
