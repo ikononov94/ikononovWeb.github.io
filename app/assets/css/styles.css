@@ -735,15 +735,19 @@ body {
   letter-spacing: 2px;
   border-bottom: 2px solid #ff8207;
 }
-.btn-toTop {
+#btn-toTop {
   padding: 5px 10px;
   border: 2px solid #ff8207;
   position: fixed;
-  right: 10%;
+  right: 5%;
   bottom: 10px;
   cursor: pointer;
   border-radius: 8px;
   z-index: 999;
+}
+#btn-toTop:hover {
+  -webkit-animation: toTop 0.8s ease;
+          animation: toTop 0.8s ease;
 }
 @media (max-width: 1024px) {
   .block-left {
@@ -787,5 +791,33 @@ body {
 @media (min-width: 321px) and (max-width: 480px) {
   .footer-blocks .block-center {
     margin-right: 20px;
+  }
+}
+@-webkit-keyframes toTop {
+  from {
+    bottom: 10px;
+  }
+  25% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+@keyframes toTop {
+  from {
+    bottom: 10px;
+  }
+  25% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 30px;
+  }
+  to {
+    bottom: 10px;
   }
 }
