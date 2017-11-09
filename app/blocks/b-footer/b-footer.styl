@@ -57,15 +57,31 @@
 	letter-spacing 2px
 	border-bottom 2px solid btncolor
 	
-.btn-toTop
+#btn-toTop
 	padding 5px 10px
 	border 2px solid btncolor
 	position fixed
-	right 10%
+	right 5%
 	bottom 10px
 	cursor pointer
 	border-radius 8px
 	z-index 999
+	&:hover
+		animation toTop .8s ease
+
+
+
+
+@keyframes toTop 
+	from 
+		bottom 10px
+	25% 
+		bottom 0
+	50%
+		bottom 30px
+	to 
+		bottom 10px
+
 	
 @media (max-width 1024px)
 	.block-left
