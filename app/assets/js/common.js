@@ -1,6 +1,7 @@
 
 
 
+
 var swiper = new Swiper('.swiper-container', {
       speed: 1000,
       effect: 'fade',
@@ -17,4 +18,3 @@ var swiper = new Swiper('.swiper-container', {
         clickable: 'true',
   },
     });
-
