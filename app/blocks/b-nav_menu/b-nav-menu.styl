@@ -46,6 +46,12 @@
 				background-color bgcolorFb
 				border-bottom 3px solid btncolor
 				color #6b848c
+
+.focused
+	background-color bgcolorFb
+	border-bottom 3px solid btncolor
+	color #6b848c
+	transition background-color 1s ease
 						
 .nav__phone
 	a
@@ -67,19 +73,19 @@
 			background-color btncolor
 			height 4px
 			margin-bottom 8px
-			transform rotate(0deg)
-			transition transform .3s ease
-		a:hover > span
-			transform rotate(180deg)
+
+
+	
 			
 			
 .nav__hidmnu
-	display none
 	position absolute
 	right 0
-	top 120px
+	top 80px
 	width 100%
+	transform translateY(-1000px)
 	background-color bgcolorMF	
+	transition all .5s ease
 	.hidmnu__ul
 		padding 0
 		text-align center
@@ -97,8 +103,10 @@
 				color btncolor
 				text-decoration none
 				font-size 1.8rem
-		
-			
+
+.hidmnu-active
+	transform translateY(0px)
+	
 @media (max-width 1196px)
 	html
 		font-size 12px

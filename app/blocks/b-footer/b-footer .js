@@ -12,7 +12,6 @@
     else
       upBtn.style.display = "none";
     }
-  }
 
   function backToTop() {
       (function goTop() {
@@ -28,3 +27,5 @@
 
   window.addEventListener('scroll', trackScroll);
   upBtn.addEventListener('click', backToTop);
+
+  
