@@ -98,7 +98,7 @@ gulp.task('img', function() {
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest('./app/assets/images'));
+    .pipe(gulp.dest('./dist/images'));
 });
 
 // Таск для формирования production-папки (task for creating of production folder dist):
