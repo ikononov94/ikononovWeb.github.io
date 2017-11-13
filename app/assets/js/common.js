@@ -29,12 +29,14 @@
   upBtn.addEventListener('click', backToTop);
 
   var modal = document.getElementById("myModal");
-  var btnOpen = document.getElementById("openModal");
+  var btnOpen = document.querySelectorAll('button[id="openModal"]');
   var closeModal = document.getElementById("close");
 
-  btnOpen.onclick = function() {
-    modal.style.display = "block";
-    document.body.style.overflowY = "hidden"
+  for (var i = 0; i < btnOpen.length; i++) {
+    btnOpen[i].onclick = function() {
+      modal.style.display = "block";
+      document.body.style.overflowY = "hidden"
+    }
   }
 
   closeModal.onclick = function() {
@@ -55,7 +57,7 @@
 
 
 var swiper = new Swiper('.swiper-container', {
-      speed: 1000,
+      speed: 500,
       effect: 'fade',
       fadeEffect: {
         crossFade: true
@@ -114,6 +116,10 @@ burg.addEventListener('click', function() {
 
 })
 
+window.onresize = function () {
+   hidmnu.classList.remove('hidmnu-active');
+};
+
 
 
 
@@ -137,9 +143,11 @@ burg.addEventListener('click', function() {
       var reg = /^\w{1,}@\w{1,}\.\w{2,}$/;
       var regPhone = /^(\+375)\d{9}$/;
 
-      resetError(elems.name.parentNode);
-      if (!elems.name.value || elems.name.value == " ") {
-        showError(elems.name.parentNode, ' Укажите Ваше Имя.');
+      if(elems.name !== undefined) {
+        resetError(elems.name.parentNode);
+        if (!elems.name.value || elems.name.value == " ") {
+          showError(elems.name.parentNode, ' Укажите Ваше Имя.');
+        }
       }
 
       if(elems.email !== undefined) {

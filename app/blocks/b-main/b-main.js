@@ -1,5 +1,5 @@
 var swiper = new Swiper('.swiper-container', {
-      speed: 1000,
+      speed: 500,
       effect: 'fade',
       fadeEffect: {
         crossFade: true

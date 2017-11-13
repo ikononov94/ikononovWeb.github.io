@@ -5,7 +5,7 @@ footer#navfooter
 				.block-left.text-left
 					a(href="#")
 						img(src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo")
-					img(src="./blocks/b-jobs/b-jobs/separator.png" alt="" class="separ")
+					img(src="./blocks/b-jobs/b-jobs/separator.png" alt="" class="")
 					p(class="text-left") Дисклеймер компании
 					
 				.block-center.text-center
@@ -26,7 +26,7 @@ footer#navfooter
 					
 	.footer-end.text-center
 		.container
-			span Copyrights 2015 © Webcom Media
+			span Copyrights 2015 &copy; Webcom Media
 
 .navpagination
 	a(id="pag-navmain" href="#navmain")
@@ -36,17 +36,17 @@ footer#navfooter
 	a(id="pag-navreviews" href="#navreviews")
 
 a(id="btn-toTop" title="Наверх")
-	img(src="./blocks/b-footer/b-footer/sprites/btn-toTop.png")
+	img(src="./blocks/b-footer/b-footer/sprites/btn-toTop.png" alt="наверх")
 
 #myModal.modal
 	.modal-content.text-center
 		span#close.close &times;
 		h4.text-center Оформить заявку
 		form(action="")
-			label
-				span Ваше имя
+			.input-name
+				label(for="name") Ваше имя
 				input(type="text" name="name" placeholder="Иванов Иван")
-			label
-				span Телефон
+			.input-phone
+				label(for="phone") Телефон
 				input(type="text" name="phone" placeholder="+375 (44) 123-45-67")
 			button(type="button" onclick="validate(this.form)" class="button button-size-x btn-modal") Отправить

@@ -18,9 +18,11 @@
       var reg = /^\w{1,}@\w{1,}\.\w{2,}$/;
       var regPhone = /^(\+375)\d{9}$/;
 
-      resetError(elems.name.parentNode);
-      if (!elems.name.value || elems.name.value == " ") {
-        showError(elems.name.parentNode, ' Укажите Ваше Имя.');
+      if(elems.name !== undefined) {
+        resetError(elems.name.parentNode);
+        if (!elems.name.value || elems.name.value == " ") {
+          showError(elems.name.parentNode, ' Укажите Ваше Имя.');
+        }
       }
 
       if(elems.email !== undefined) {

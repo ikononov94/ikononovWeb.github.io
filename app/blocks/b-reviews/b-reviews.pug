@@ -3,7 +3,7 @@ section#navreviews.reviews
 		.section__title
 				h2(class="reviews-h2") Оставьте отзыв
 				span
-					img(src="./blocks/b-jobs/b-jobs/separator.png")
+					img(src="./blocks/b-jobs/b-jobs/separator.png" alt="")
 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis blanditiis similique libero, vero doloribus, beatae quis laudantium obcaecati. Eligendi ab expedita, libero quo nisi iure sed eius aut earum commodi.
 		.container-reviews
 			.reviews-blocks
@@ -18,31 +18,26 @@ section#navreviews.reviews
 						span Пишите
 						p info@promo-webcom.by
 				.block-right
-					form(action="")
+					form(action="" name="form" novalidate)
 						.right-name
-							label
-								span Ваше имя
-								input(type="text" name="name" placeholder="Иванов Иван")
+							label(for="name") Ваше имя
+							input(type="text" name="name" placeholder="Иванов Иван")
 						.right-email
-							label
-								span E-mail
-								input(type="text" name="email" placeholder="example@mysite.com")
+							label(for="email") E-mail
+							input(type="text" name="email" placeholder="example@mysite.com")
 						.right-office
-							label
-								span Ваша должность
-								input(type="text" name="office" placeholder="Должность")
+							label(for="office") Ваша должность
+							input(type="text" name="office" placeholder="Должность")
 						.right-review
-							label
-								span Отзыв
-								textarea(type="text" name="review" rows="5" placeholder="Ваше сообщение" resize )
+							label(for="review") Отзыв
+							textarea(type="text" name="review" rows="5" placeholder="Ваше сообщение" resize )
 						.right-photo
 							a(href="#" class="button button-size-s btn-rev") +
 							span Фото
 						.right-capcha
 							.capcha-in
-								label
-									span Введите код с картинки
-									input(type="text" name="capcha")
+								label(for="capcha") Введите код с картинки
+								input(type="text" name="capcha")
 							.capcha-btn
-								img(src="./blocks/b-reviews/b-reviews/capcha.png")
+								img(src="./blocks/b-reviews/b-reviews/capcha.png" alt="capcha")
 								button(type="button" onclick="validate(this.form)" class="button button-size-m btn-form") Отправить

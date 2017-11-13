@@ -29,12 +29,14 @@
   upBtn.addEventListener('click', backToTop);
 
   var modal = document.getElementById("myModal");
-  var btnOpen = document.getElementById("openModal");
+  var btnOpen = document.querySelectorAll('button[id="openModal"]');
   var closeModal = document.getElementById("close");
 
-  btnOpen.onclick = function() {
-    modal.style.display = "block";
-    document.body.style.overflowY = "hidden"
+  for (var i = 0; i < btnOpen.length; i++) {
+    btnOpen[i].onclick = function() {
+      modal.style.display = "block";
+      document.body.style.overflowY = "hidden"
+    }
   }
 
   closeModal.onclick = function() {
