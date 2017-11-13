@@ -41,5 +41,9 @@ burg.addEventListener('click', function() {
 
 })
 
+window.onresize = function () {
+   hidmnu.classList.remove('hidmnu-active');
+};
+
 
 
