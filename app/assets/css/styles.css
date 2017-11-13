@@ -104,6 +104,7 @@ body {
   background-color: #ff8207;
   height: 4px;
   margin-bottom: 8px;
+  border-radius: 2px;
 }
 .nav__hidmnu {
   position: absolute;
@@ -179,6 +180,11 @@ body {
 @media (min-width: 0px) and (max-width: 480px) {
   html {
     font-size: 8px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 10px;
   }
 }
 .swiper {
@@ -279,6 +285,9 @@ body {
   border-radius: 5px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 .button-size-l {
   font-size: 1.8rem;
@@ -288,6 +297,37 @@ body {
 }
 .button:hover {
   background-color: #d26800;
+}
+.btn-bottom {
+  position: absolute;
+  text-align: center;
+  bottom: 50px;
+  width: 100%;
+  z-index: 999;
+}
+.btn-bottom a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: rgba(30,41,47,0.7);
+  cursor: pointer;
+}
+.btn-bottom a img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.btn-bottom a:hover > img {
+  -webkit-animation: btn-bottom 1.5s ease-in-out infinite;
+          animation: btn-bottom 1.5s ease-in-out infinite;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
@@ -303,28 +343,63 @@ body {
     padding-bottom: 50px;
   }
   .swiper {
-    min-height: 500px;
+    padding-top: 100px;
+    min-height: 600px;
   }
   .swiper-container {
-    height: 500px;
+    height: 100%;
   }
   .swiper-container-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 40px;
+    bottom: 100px;
+  }
+  .btn-bottom {
+    bottom: 10px;
   }
 }
 @media (min-width: 481px) and (max-width: 920px) {
+  .swiper {
+    padding-top: 150px;
+  }
+  .swiper-container {
+    height: 100%;
+  }
   .swiper-container-horizontal>.swiper-pagination-bullets,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 20px;
+    bottom: 120px;
+  }
+  .btn-bottom {
+    bottom: 50px;
+  }
+}
+@-webkit-keyframes btn-bottom {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes btn-bottom {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
   }
 }
 .jobs {
   background: url("../../blocks/b-jobs/b-jobs/jobs-bg.jpg") no-repeat -150px -300px;
   border-bottom: 2px solid #b5c4c4;
-  padding-bottom: 50px;
+  margin: 10px 0 0 0;
 }
 .section__title {
   width: 55%;
@@ -443,9 +518,16 @@ body {
     width: 90%;
   }
 }
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .section__title {
     width: 90%;
+  }
+  .block-hid {
+    width: 100%;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
@@ -454,7 +536,7 @@ body {
   }
 }
 .information {
-  padding-bottom: 40px;
+  margin: 10px 0 60px 0;
 }
 .information__blocks {
   display: -webkit-box;
@@ -493,7 +575,7 @@ body {
   color: #8198a0;
 }
 .reviews {
-  padding-bottom: 98px;
+  margin: 10px 0 98px 0;
 }
 .container-reviews {
   max-width: 940px;
@@ -569,6 +651,9 @@ body {
   font-size: 1.3rem;
   color: #999;
   font-style: italic;
+}
+.reviews-blocks .block-right textarea {
+  resize: none;
 }
 .reviews-blocks .block-right .right-photo {
   padding-bottom: 1.3em;
@@ -761,28 +846,103 @@ body {
   border-radius: 8px;
   z-index: 999;
   display: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 #btn-toTop:hover {
-  -webkit-animation: toTop 0.8s ease;
-          animation: toTop 0.8s ease;
+  background-color: #28363d;
+  border: 2px solid #28363d;
 }
 .navpagination {
   position: fixed;
   bottom: 43%;
-  right: 5%;
+  right: 20px;
   z-index: 999;
 }
 .navpagination a {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-color: #28363d;
   border-radius: 50%;
   margin-bottom: 10px;
   cursor: pointer;
+  opacity: 0.5;
 }
 .navpagination .pag-active {
   background-color: #ff8207;
+  opacity: 1;
+}
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 9999;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  border-radius: 10px;
+}
+.modal-content h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 2rem;
+}
+.modal-content label {
+  display: block;
+}
+.modal-content span {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.modal-content input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  width: 80%;
+}
+.modal-content input::-webkit-input-placeholder {
+  font-style: italic;
+  padding: 0 0 0 10px;
+}
+.modal-content input::-moz-placeholder {
+  font-style: italic;
+  padding: 0 0 0 10px;
+}
+.modal-content input:-ms-input-placeholder {
+  font-style: italic;
+  padding: 0 0 0 10px;
+}
+.modal-content input::placeholder {
+  font-style: italic;
+  padding: 0 0 0 10px;
+}
+.btn-modal {
+  margin: 10px;
+  padding: 10px 20px;
+}
+.close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .block-left {
@@ -791,8 +951,17 @@ body {
   .block-right {
     margin-right: 20px;
   }
+  .modal-content {
+    width: 40%;
+  }
 }
 @media (max-width: 480px) {
+  .modal-content {
+    width: 70%;
+  }
+  .navpagination {
+    display: none;
+  }
   .footer-blocks {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -826,33 +995,5 @@ body {
 @media (min-width: 321px) and (max-width: 480px) {
   .footer-blocks .block-center {
     margin-right: 20px;
-  }
-}
-@-webkit-keyframes toTop {
-  from {
-    bottom: 10px;
-  }
-  25% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 30px;
-  }
-  to {
-    bottom: 10px;
-  }
-}
-@keyframes toTop {
-  from {
-    bottom: 10px;
-  }
-  25% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 30px;
-  }
-  to {
-    bottom: 10px;
   }
 }
