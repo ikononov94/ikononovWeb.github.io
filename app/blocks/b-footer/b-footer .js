@@ -28,4 +28,26 @@
   window.addEventListener('scroll', trackScroll);
   upBtn.addEventListener('click', backToTop);
 
+  var modal = document.getElementById("myModal");
+  var btnOpen = document.getElementById("openModal");
+  var closeModal = document.getElementById("close");
+
+  btnOpen.onclick = function() {
+    modal.style.display = "block";
+    document.body.style.overflowY = "hidden"
+  }
+
+  closeModal.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflowY = "auto"
+  }
+
+  window.onclick = function() {
+    if(event.target == modal) {
+      modal.style.display = "none";
+      document.body.style.overflowY = "auto"
+    }
+  }
+
+
   

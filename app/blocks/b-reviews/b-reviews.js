@@ -16,32 +16,50 @@
     function validate(form) {
       var elems = form.elements;
       var reg = /^\w{1,}@\w{1,}\.\w{2,}$/;
+      var regPhone = /^(\+375)\d{9}$/;
 
       resetError(elems.name.parentNode);
       if (!elems.name.value || elems.name.value == " ") {
         showError(elems.name.parentNode, ' Укажите Ваше Имя.');
       }
-      resetError(elems.email.parentNode);
 
-      if (!elems.email.value || elems.email.value == " ") {
-        showError(elems.email.parentNode, ' Укажите E-mail.');
-      } else if (!reg.test(elems.email.value)) {
-        showError(elems.email.parentNode, ' Не верный E-mail.');
+      if(elems.email !== undefined) {
+        resetError(elems.email.parentNode);
+        if (!elems.email.value || elems.email.value == " ") {
+          showError(elems.email.parentNode, ' Укажите E-mail.');
+        } else if (!reg.test(elems.email.value)) {
+          showError(elems.email.parentNode, ' Неверный E-mail.');
+        }
       }
 
-      resetError(elems.office.parentNode);
-      if (!elems.office.value || elems.office.value == " ") {
-        showError(elems.office.parentNode, ' Укажите Вашу должность.');
+      if(elems.office !== undefined) {
+        resetError(elems.office.parentNode);
+        if (!elems.office.value || elems.office.value == " ") {
+          showError(elems.office.parentNode, ' Укажите Вашу должность.');
+        }
       }
 
-      resetError(elems.review.parentNode);
-      if (!elems.review.value || elems.review.value == " ") {
-        showError(elems.review.parentNode, ' Отсутствует текст.');
+      if(elems.review !== undefined) {
+        resetError(elems.review.parentNode);
+        if (!elems.review.value || elems.review.value == " ") {
+          showError(elems.review.parentNode, ' Отсутствует текст.');
+        }
       }
 
-      resetError(elems.capcha.parentNode);
-      if (!elems.capcha.value || elems.capcha.value == " ") {
-        showError(elems.capcha.parentNode, ' Введите код.');
+      if(elems.capcha !== undefined) {
+        resetError(elems.capcha.parentNode);
+        if (!elems.capcha.value || elems.capcha.value == " ") {
+          showError(elems.capcha.parentNode, ' Введите код.');
+        }
+      }
+
+      if(elems.phone !== undefined) {
+        resetError(elems.phone.parentNode);
+        if (!elems.phone.value || elems.phone.value == " ") {
+          showError(elems.phone.parentNode, ' Укажите телефон.');
+        } else if (!regPhone.test(elems.phone.value)) {
+          showError(elems.phone.parentNode, ' Введите корректный номер');
+        }
       }
 
     }

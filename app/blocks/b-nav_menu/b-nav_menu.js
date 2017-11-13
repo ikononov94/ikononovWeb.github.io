@@ -36,6 +36,7 @@ var burg = document.getElementById('nav__burg');
 var hidmnu = document.getElementById('hidmnu');  
 
 burg.addEventListener('click', function() {
+      
       hidmnu.classList.toggle('hidmnu-active');
 
 })

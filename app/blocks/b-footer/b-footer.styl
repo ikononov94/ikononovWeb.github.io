@@ -67,43 +67,94 @@
 	border-radius 8px
 	z-index 999
 	display none
+	transition all .5s ease
 	&:hover
-		animation toTop .8s ease
+		background-color bgcolorMF
+		border 2px solid bgcolorMF
 
 .navpagination
 	position fixed
 	bottom 43%
-	right 5%
+	right 20px
 	z-index 999
 	a
 		display block
-		width 20px
-		height 20px
+		width 18px
+		height 18px
 		background-color bgcolorMF
 		border-radius 50%
 		margin-bottom 10px	
 		cursor pointer
+		opacity .5
 	.pag-active
 		background-color btncolor
+		opacity 1
 
-@keyframes toTop 
-	from 
-		bottom 10px
-	25% 
-		bottom 0
-	50%
-		bottom 30px
-	to 
-		bottom 10px
-
+.modal
+	display none
+	position fixed
+	left 0
+	top 0
+	width 100%
+	height 100%
+	overflow hidden
+	background-color rgba(0,0,0, 0.8)
+	z-index 9999
+	&-content
+		position relative
+		background-color #fefefe
+		margin 10% auto
+		padding 20px
+		border 1px solid #888
+		width 20%
+		border-radius 10px
+		h4
+			text-transform uppercase
+			margin-top 0
+			font-size  2rem
+		label
+			display block
+		span
+			display block
+			text-align center
+			padding 10px
+			text-transform uppercase
+			font-weight 700
+			font-size 1.2rem
+		input
+			outline none
+			border none
+			border-bottom 1px solid #e5e5e5
+			width 80%
+			&::placeholder
+				font-style italic
+				padding 0 0 0 10px
+.btn-modal
+	margin 10px	
+	padding 10px 20px		
+			
+.close
+	position absolute
+	top -40px
+	right 0
+	color #fff
+	font-size 28px
+	font-weight 700
+	cursor pointer
 	
 @media (max-width 1024px)
 	.block-left
 		margin-left 20px
 	.block-right
 		margin-right 20px
+	.modal-content
+		width 40%
 
 @media (max-width 480px)
+	.modal-content
+		width 70%
+	.navpagination
+		display none
 	.footer-blocks
 		flex-wrap wrap
 		span
