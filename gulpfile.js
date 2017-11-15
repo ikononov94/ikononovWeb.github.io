@@ -90,7 +90,8 @@ gulp.task('clean', function() {
 gulp.task('img', function() {
   return gulp.src([
     './app/blocks/**/*.jpg',
-    './app/blocks/**/*.png'
+    './app/blocks/**/*.png',
+    './app/blocks/**/*.svg'
     ])
     .pipe(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
       interlaced: true,
