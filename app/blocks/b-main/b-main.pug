@@ -1,45 +1,25 @@
+mixin swiper-slide(h1)
+	.swiper-slide 
+		.main-title
+			h1=h1
+			.title-delimiter
+				img(src="./blocks/b-main/b-main/delimiter.png" alt="")
+		h4(class="main-description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?
+		button(id="openModal" class="swiper-slide__button swiper-slide__button_size_l") Оформить заявку
 section#navmain.swiper
 	.swiper-container
 		.swiper-wrapper
-			.swiper-slide 
-				.main-title
-					h1 Главный заголовок
-					.title-delimiter
-						img(src="./blocks/b-main/b-main/delimiter.png" alt="")
-				h4(class="main-description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?
-				button(id="openModal" class="button button-size-l") Оформить заявку
-			.swiper-slide
-				.main-title
-					h1 Главный заголовок 2
-					span(class="title-delimiter")
-						img(src="./blocks/b-main/b-main/delimiter.png" alt="")
-				h4(class="main-description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?
-				button(id="openModal" class="button button-size-l") Оформить заявку
-			.swiper-slide
-				.main-title
-					h1 Главный заголовок 3
-					span(class="title-delimiter")
-						img(src="./blocks/b-main/b-main/delimiter.png" alt="")
-				h4(class="main-description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?
-			.swiper-slide
-				.main-title
-					h1 Главный заголовок 4
-					span(class="title-delimiter")
-						img(src="./blocks/b-main/b-main/delimiter.png" alt="")
-				h4(class="main-description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?
-				button(id="openModal" class="button button-size-l") Оформить заявку
-			.swiper-slide
-				.main-title
-					h1 Главный заголовок 5
-					span(class="title-delimiter")
-						img(src="./blocks/b-main/b-main/delimiter.png" alt="")
-				h4(class="main-description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?
+			+swiper-slide("Главный заголовок")
+			+swiper-slide("Главный заголовок 2")
+			+swiper-slide("Главный заголовок 3")
+			+swiper-slide("Главный заголовок 4")
+			+swiper-slide("Главный заголовок 5")
 
 		.swiper-pagination
 
 		.swiper-button-next
 		.swiper-button-prev
-		.btn-bottom
+		.swiper__button-bottom
 			a(href="#navjobs")
 				img(src="./blocks/b-main/b-main/sprites/arrow.svg" alt="вниз")
 

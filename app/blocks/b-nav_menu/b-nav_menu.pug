@@ -1,48 +1,35 @@
+-var nav_a = ['#navmain','#navjobs','#navinformation','##','#navreviews','#navreviews'];
+-var a_name = ['Главная','Портфолио','Преимущества','Схема работы','Отзывы','Контакты'];
 nav#nav.nav
 	.container
 		.nav-blocks
-			.nav__logo.logo
+			.nav-blocks__logo
 				a(href="#")
 					img(src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo")
 			
-			.nav__menu.menu
-				ul.menu__ul
-					li 
-						a(href="#navmain") Главная
-					li 
-						a(href="#navjobs") Портфолио
-					li 
-						a(href="#navinformation") Преимущества
-					li 
-						a(href="##") Схема работы
-					li 
-						a(href="#navreviews") Отзывы
-					li 
-						a(href="#navreviews") Контакты
-			.nav__phone
+			.nav-blocks__menu
+				ul.nav-blocks__menu-ul
+					- for (var i = 0; i < nav_a.length; i++) {
+						li
+							a(href=nav_a[i])=a_name[i]
+					- }
+					
+			.nav-blocks__phone
 				a(href="tel:+375291234567") +375(29)123-45-67
 				a(href="tel:+375291234567") +375(29)123-45-67
 
-			#nav__burg.nav__burg
-				.burg
+			.nav-burg#nav-burg
+				.nav-burg__span
 					a(href="##")
 						span
 						span
 						span
 
-		#hidmnu.nav__hidmnu
-			ul.hidmnu__ul
-				li 
-					a(href="#navmain") Главная
-				li 
-					a(href="#navjobs") Портфолио
-				li 
-					a(href="#navinformation") Преимущества
-				li 
-					a(href="##") Схема работы
-				li 
-					a(href="#navreviews") Отзывы
-				li 
-					a(href="#navreviews") Контакты
+		.menu-hidden#menu-hidden
+			ul.menu-hidden__ul
+				- for (var i = 0; i < nav_a.length; i++) {
+					li
+						a(href=nav_a[i])=a_name[i]
+				- }
 
 

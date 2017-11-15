@@ -32,17 +32,17 @@ window.addEventListener('scroll', function(e) {
   }
 }, false);
 
-var burg = document.getElementById('nav__burg');
-var hidmnu = document.getElementById('hidmnu');  
+var burg = document.getElementById('nav-burg');
+var hidmnu = document.getElementById('menu-hidden');  
 
 burg.addEventListener('click', function() {
       
-      hidmnu.classList.toggle('hidmnu-active');
+      hidmnu.classList.toggle('menu-hidden_active');
 
 })
 
 window.onresize = function () {
-   hidmnu.classList.remove('hidmnu-active');
+   hidmnu.classList.remove('menu-hidden_active');
 };
 
 

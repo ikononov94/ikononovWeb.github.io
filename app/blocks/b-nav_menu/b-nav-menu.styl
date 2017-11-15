@@ -14,13 +14,13 @@
 	flex-direction row
 	justify-content space-around
 	align-items center
-	height inherit
-.menu__ul
+	height 120px
+.nav-blocks__menu-ul
 	margin 0
 	padding 0
 	display flex
 	justify-content space-around
-	height inherit
+	height 120px
 	
 	li
 		margin-right 20px
@@ -53,7 +53,7 @@
 	color #6b848c
 	transition background-color 1s ease
 						
-.nav__phone
+.nav-blocks__phone
 	a
 		display block
 		font-size 1.7rem
@@ -62,9 +62,9 @@
 		text-decoration none
 		margin-bottom 10px
 		
-.nav__burg
+.nav-burg
 	display none
-	.burg
+	.nav-burg__span
 		float right
 		margin 40px 20px 0 0 
 		span
@@ -75,7 +75,7 @@
 			margin-bottom 8px
 			border-radius 2px		
 					
-.nav__hidmnu
+.menu-hidden
 	position absolute
 	right 0
 	top 80px
@@ -84,7 +84,7 @@
 	background-color bgcolorMF	
 	transition all .3s ease
 	z-index -1
-	.hidmnu__ul
+	&__ul
 		padding 0
 		text-align center
 		li
@@ -102,7 +102,7 @@
 				text-decoration none
 				font-size 1.8rem
 
-.hidmnu-active
+.menu-hidden_active
 	transform translateY(0px)
 	width 100%
 	
@@ -113,19 +113,18 @@
 		height 80px
 	.nav-blocks
 		height 45px
-	.nav-blocks
 		justify-content space-between
-	.nav__phone
+	.nav-blocks__phone
 		display none
-	.nav__menu
+	.nav-blocks__menu
 		display none
-	.nav__logo
+	.nav-blocks__logo
 		margin-left 20px
 		padding-top 40px
 		img
 			width 100%
 	
-	.nav__burg
+	.nav-burg
 		display block
 		
 @media (min-width 0px) and (max-width 480px)

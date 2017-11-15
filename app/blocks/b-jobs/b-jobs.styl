@@ -26,17 +26,17 @@
 	flex-direction row
 	flex-wrap wrap
 	justify-content space-around
-.block
+.jobs-blocks__block
 	position relative
 	background-color bgcolorMF
 	height 320px
 	flex-basis 440px
 	margin-bottom 20px
 	cursor pointer
-	&:hover > .block-hid
+	&:hover > .jobs-blocks__block-hidden
 		opacity 1
 		transform translateY(0)
-	.block-logo
+	.jobs-blocks__logo
 		display block
 		position absolute
 		top 0
@@ -45,7 +45,7 @@
 		left 0
 		margin auto
 		
-.block-hid
+.jobs-blocks__block-hidden
 	width 100%
 	height 105px
 	opacity 0
@@ -71,9 +71,9 @@
 
 
 @media (max-width 1024px)
-	.block
+	.jobs-blocks__block
 		height 350px
-	.block-hid
+	.jobs-blocks__block-hidden
 		h5
 			font-size 1.07rem
 			padding-left 20px
@@ -83,7 +83,7 @@
 
 				
 @media (min-width 481px) and (max-width 768px)
-	.block
+	.jobs-blocks__block
 		height 350px
 @media (max-width 320px)
 	.section__title
@@ -91,7 +91,7 @@
 @media (min-width 320px) and (max-width 480px)
 	.section__title
 		width 90%
-	.block-hid
+	.jobs-blocks__block-hidden
 		width 100%
 		opacity 1
 		transform translateY(0px)

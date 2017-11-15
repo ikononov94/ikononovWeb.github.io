@@ -1,3 +1,5 @@
+-var images = ["Monitor.svg","Magic_wand.svg","Rocket.svg","Globe-2.svg","Settings.svg","Layers.svg","Wrench.svg","Note.svg"];
+-var h5 = ["Преимущество 1","Преимущество 2","Преимущество 3","Преимущество 4","Преимущество 5","Преимущество 6","Преимущество 7","Преимущество 8"];
 section#navinformation.information
 	.container
 		.section__title
@@ -7,35 +9,11 @@ section#navinformation.information
 			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis blanditiis similique libero, vero doloribus, beatae quis laudantium obcaecati. Eligendi ab expedita, libero quo nisi iure sed eius aut earum commodi.
 
 		.information__blocks
-			.block-info
-				img(src="./blocks/b-information/b-information/sprites/Monitor.svg" alt="monitor")
-				h5 Преимущество 1
-				span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
-			.block-info
-				img(src="./blocks/b-information/b-information/sprites/Magic_wand.svg" alt="magic wand")
-				h5 Преимущество 2
-				span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
-			.block-info
-				img(src="./blocks/b-information/b-information/sprites/Rocket.svg" alt="rocket")
-				h5 Преимущество 3
-				span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
-			.block-info
-				img(src="./blocks/b-information/b-information/sprites/Globe-2.svg" alt="globe")
-				h5 Преимущество 4
-				span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
-			.block-info
-				img(src="./blocks/b-information/b-information/sprites/Settings.svg" alt="settings")
-				h5 Преимущество 5
-				span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
-			.block-info
-				img(src="./blocks/b-information/b-information/sprites/Layers.svg" alt="layers")
-				h5 Преимущество 6
-				span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
-			.block-info
-				img(src="./blocks/b-information/b-information/sprites/Wrench.svg" alt="wrench")
-				h5 Преимущество 7
-				span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
-			.block-info
-				img(src="./blocks/b-information/b-information/sprites/Note.svg" alt="note")
-				h5 Преимущество 8
-				span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
+			- for (var i = 0; i < images.length; i++) {
+				.information__blocks-block
+					img(src="./blocks/b-information/b-information/sprites/" +images[i] alt=images[i])
+					h5=h5[i]
+					span  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.
+			- }
+
+

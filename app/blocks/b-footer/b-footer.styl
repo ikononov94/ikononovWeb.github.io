@@ -5,9 +5,6 @@
 	display flex
 	flex-direction row
 	justify-content space-between
-	.block-left
-		.separ
-			display block
 	span
 		display block
 		color #fff
@@ -18,13 +15,13 @@
 		color #fff
 		font-size 1rem
 
-	.block-left
+	.footer-blocks__block-left
 		img
 			margin-bottom 20px
 		a
 			display block
-	.block-center
-	.block-right
+	.footer-blocks__block-center
+	.footer-blocks__block-right
 		span
 			margin-bottom 40px
 		img
@@ -33,8 +30,8 @@
 			margin 0
 			width 200px
 			text-align right
-	.block-center
-		.social
+	.footer-blocks__block-center
+		.footer-blocks__social
 			img
 				margin 0 10px
 				transform rotate(0deg)
@@ -130,11 +127,11 @@
 			&::placeholder
 				font-style italic
 				padding 0 0 0 10px
-.btn-modal
+.modal-content__button-modal
 	margin 10px	
 	padding 10px 20px		
 			
-.close
+.modal-content__close
 	position absolute
 	top -40px
 	right 0
@@ -144,9 +141,9 @@
 	cursor pointer
 	
 @media (max-width 1024px)
-	.block-left
+	.footer-blocks__block-left
 		margin-left 20px
-	.block-right
+	.footer-blocks__block-right
 		margin-right 20px
 	.modal-content
 		width 40%
@@ -162,19 +159,19 @@
 			font-size 1.4rem
 		p
 			font-size 1.4rem
-		.block-left
+		.footer-blocks__block-left
 			img
 				margin-bottom 10px
 			a
 				img
 					width 70%
-		.block-center
-		.block-right
+		.footer-blocks__block-center
+		.footer-blocks__block-right
 			span
 				margin-bottom 50px !important
 			img
 				margin-bottom 20px !important
-		.block-right
+		.footer-blocks__block-right
 			margin-left 20px 
 			text-align left
 			p
@@ -182,6 +179,6 @@
 
 @media (min-width 321px) and (max-width 480px)
 	.footer-blocks
-		.block-center
+		.footer-blocks__block-center
 			margin-right 20px
 	

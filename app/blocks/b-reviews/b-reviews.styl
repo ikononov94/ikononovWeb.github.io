@@ -18,11 +18,11 @@
 		color #999999
 		font-size 1.3rem
 		font-weight 700
-	.block-left
+	.reviews-blocks__block-left
 		width 80%
 		span
 			color btncolor
-	.block-right
+	.reviews-blocks__block-right
 		width 100%
 		label
 			color bgcolorMF
@@ -41,15 +41,15 @@
 				font-style italic
 		textarea
 			resize none
-		.right-photo
+		.reviews-blocks-photo
 			padding-bottom 1.3em
 			span
 				line-height 2.3
-		.right-capcha
-			.capcha-in
+		.reviews-blocks-capcha
+			.review-form__capcha-in
 				width 55%
 			
-			.capcha-btn
+			.review-form__capcha-btn
 				display flex
 				flex-direction row
 				justify-content space-between
@@ -63,52 +63,51 @@
 	textarea
 		border-bottom 1px solid red !important
 		
-.button-size-s
+.review-form__button_size_s
 	border 0
 	font-size 2.14rem
 	padding 10px 15px
 	outline none
 	cursor pointer
-.button-size-m
+.review-form__button_size_m
 	border 0
 	font-size 1.3rem
 	letter-spacing 1px
-	
 	padding 20px 45px
 	outline none
 	cursor pointer
-.btn-rev
+.review-form__button-add
 	float left
 	margin-right 20px
 	
-.btn-form
+.review-form__button-submit
 	float right
 	
 @media (max-width 320px)
 	.reviews-blocks
 		flex-direction column
-		.block-right
+		.reviews-blocks__block-right
 			width 80%
 			margin 0 0 0 20px
-			.right-photo
+			.review-form__photo
 				span
 					line-height 40px
-	.button-size-m 
+	.review-form__button_size_m
 		padding 10px 22.5px
 
 @media (min-width 321px) and (max-width 480px)
 	.reviews-blocks
 		flex-direction column
-		.block-right
+		.reviews-blocks__block-right
 			width 80%
 			margin 0 0 0 20px
-			.right-photo
+			.review-form__photo
 				span
 					line-height 40px
-	.button-size-m 
+	.review-form__button_size_m 
 		padding 10px 22.5px
 		
 @media (min-width 768px) and (max-width 768px)
 	.reviews-blocks
-		.block-right
+		.reviews-blocks__block-right
 			width 50%

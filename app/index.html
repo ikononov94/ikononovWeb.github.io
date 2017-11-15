@@ -19,30 +19,30 @@
     <nav class="nav" id="nav">
       <div class="container">
         <div class="nav-blocks">
-          <div class="nav__logo logo"><a href="#"><img src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo"></a></div>
-          <div class="nav__menu menu">
-            <ul class="menu__ul">
-              <li> <a href="#navmain">Главная</a></li>
-              <li> <a href="#navjobs">Портфолио</a></li>
-              <li> <a href="#navinformation">Преимущества</a></li>
-              <li> <a href="##">Схема работы</a></li>
-              <li> <a href="#navreviews">Отзывы</a></li>
-              <li> <a href="#navreviews">Контакты</a></li>
+          <div class="nav-blocks__logo"><a href="#"><img src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo"></a></div>
+          <div class="nav-blocks__menu">
+            <ul class="nav-blocks__menu-ul">
+              <li><a href="#navmain">Главная</a></li>
+              <li><a href="#navjobs">Портфолио</a></li>
+              <li><a href="#navinformation">Преимущества</a></li>
+              <li><a href="##">Схема работы</a></li>
+              <li><a href="#navreviews">Отзывы</a></li>
+              <li><a href="#navreviews">Контакты</a></li>
             </ul>
           </div>
-          <div class="nav__phone"><a href="tel:+375291234567">+375(29)123-45-67</a><a href="tel:+375291234567">+375(29)123-45-67</a></div>
-          <div class="nav__burg" id="nav__burg">
-            <div class="burg"><a href="##"><span></span><span></span><span></span></a></div>
+          <div class="nav-blocks__phone"><a href="tel:+375291234567">+375(29)123-45-67</a><a href="tel:+375291234567">+375(29)123-45-67</a></div>
+          <div class="nav-burg" id="nav-burg">
+            <div class="nav-burg__span"><a href="##"><span></span><span></span><span></span></a></div>
           </div>
         </div>
-        <div class="nav__hidmnu" id="hidmnu">
-          <ul class="hidmnu__ul">
-            <li> <a href="#navmain">Главная</a></li>
-            <li> <a href="#navjobs">Портфолио</a></li>
-            <li> <a href="#navinformation">Преимущества</a></li>
-            <li> <a href="##">Схема работы</a></li>
-            <li> <a href="#navreviews">Отзывы</a></li>
-            <li> <a href="#navreviews">Контакты</a></li>
+        <div class="menu-hidden" id="menu-hidden">
+          <ul class="menu-hidden__ul">
+            <li><a href="#navmain">Главная</a></li>
+            <li><a href="#navjobs">Портфолио</a></li>
+            <li><a href="#navinformation">Преимущества</a></li>
+            <li><a href="##">Схема работы</a></li>
+            <li><a href="#navreviews">Отзывы</a></li>
+            <li><a href="#navreviews">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -50,45 +50,51 @@
     <section class="swiper" id="navmain">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"> 
-            <div class="main-title">
-              <h1>Главный заголовок</h1>
-              <div class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></div>
-            </div>
-            <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
-            <button class="button button-size-l" id="openModal">Оформить заявку</button>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-title">
-              <h1>Главный заголовок 2</h1><span class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></span>
-            </div>
-            <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
-            <button class="button button-size-l" id="openModal">Оформить заявку</button>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-title">
-              <h1>Главный заголовок 3</h1><span class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></span>
-            </div>
-            <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-title">
-              <h1>Главный заголовок 4</h1><span class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></span>
-            </div>
-            <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
-            <button class="button button-size-l" id="openModal">Оформить заявку</button>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-title">
-              <h1>Главный заголовок 5</h1><span class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></span>
-            </div>
-            <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
-          </div>
+              <div class="swiper-slide"> 
+                <div class="main-title">
+                  <h1>Главный заголовок</h1>
+                  <div class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></div>
+                </div>
+                <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
+                <button class="swiper-slide__button swiper-slide__button_size_l" id="openModal">Оформить заявку</button>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="main-title">
+                  <h1>Главный заголовок 2</h1>
+                  <div class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></div>
+                </div>
+                <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
+                <button class="swiper-slide__button swiper-slide__button_size_l" id="openModal">Оформить заявку</button>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="main-title">
+                  <h1>Главный заголовок 3</h1>
+                  <div class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></div>
+                </div>
+                <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
+                <button class="swiper-slide__button swiper-slide__button_size_l" id="openModal">Оформить заявку</button>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="main-title">
+                  <h1>Главный заголовок 4</h1>
+                  <div class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></div>
+                </div>
+                <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
+                <button class="swiper-slide__button swiper-slide__button_size_l" id="openModal">Оформить заявку</button>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="main-title">
+                  <h1>Главный заголовок 5</h1>
+                  <div class="title-delimiter"><img src="./blocks/b-main/b-main/delimiter.png" alt=""></div>
+                </div>
+                <h4 class="main-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?</h4>
+                <button class="swiper-slide__button swiper-slide__button_size_l" id="openModal">Оформить заявку</button>
+              </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <div class="btn-bottom"><a href="#navjobs"><img src="./blocks/b-main/b-main/sprites/arrow.svg" alt="вниз"></a></div>
+        <div class="swiper__button-bottom"><a href="#navjobs"><img src="./blocks/b-main/b-main/sprites/arrow.svg" alt="вниз"></a></div>
       </div>
     </section>
     <section class="jobs" id="navjobs">
@@ -98,42 +104,42 @@
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis blanditiis similique libero, vero doloribus, beatae quis laudantium obcaecati. Eligendi ab expedita, libero quo nisi iure sed eius aut earum commodi.</p>
         </div>
         <div class="jobs-blocks">
-          <div class="block"><img class="block-logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block1">
-            <div class="block-hid">
-              <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
-              <p>Описание работы</p>
-            </div>
-          </div>
-          <div class="block"><img class="block-logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block2">
-            <div class="block-hid">
-              <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
-              <p>Описание работы</p>
-            </div>
-          </div>
-          <div class="block"><img class="block-logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block3">
-            <div class="block-hid">
-              <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
-              <p>Описание работы</p>
-            </div>
-          </div>
-          <div class="block"><img class="block-logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block4">
-            <div class="block-hid">
-              <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
-              <p>Описание работы</p>
-            </div>
-          </div>
-          <div class="block"><img class="block-logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block5">
-            <div class="block-hid">
-              <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
-              <p>Описание работы</p>
-            </div>
-          </div>
-          <div class="block"><img class="block-logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block6">
-            <div class="block-hid">
-              <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
-              <p>Описание работы</p>
-            </div>
-          </div>
+              <div class="jobs-blocks__block"><img class="jobs-blocks__logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block1">
+                <div class="jobs-blocks__block-hidden">
+                  <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
+                  <p>Описание работы</p>
+                </div>
+              </div>
+              <div class="jobs-blocks__block"><img class="jobs-blocks__logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block2">
+                <div class="jobs-blocks__block-hidden">
+                  <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
+                  <p>Описание работы</p>
+                </div>
+              </div>
+              <div class="jobs-blocks__block"><img class="jobs-blocks__logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block3">
+                <div class="jobs-blocks__block-hidden">
+                  <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
+                  <p>Описание работы</p>
+                </div>
+              </div>
+              <div class="jobs-blocks__block"><img class="jobs-blocks__logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block4">
+                <div class="jobs-blocks__block-hidden">
+                  <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
+                  <p>Описание работы</p>
+                </div>
+              </div>
+              <div class="jobs-blocks__block"><img class="jobs-blocks__logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block5">
+                <div class="jobs-blocks__block-hidden">
+                  <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
+                  <p>Описание работы</p>
+                </div>
+              </div>
+              <div class="jobs-blocks__block"><img class="jobs-blocks__logo" src="./blocks/b-jobs/b-jobs/jobs-block-img.png" alt="block5">
+                <div class="jobs-blocks__block-hidden">
+                  <h5>Название работы</h5><span><img src="./blocks/b-jobs/b-jobs/separator.png" alt=""></span>
+                  <p>Описание работы</p>
+                </div>
+              </div>
         </div>
       </div>
     </section>
@@ -144,28 +150,28 @@
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis blanditiis similique libero, vero doloribus, beatae quis laudantium obcaecati. Eligendi ab expedita, libero quo nisi iure sed eius aut earum commodi.</p>
         </div>
         <div class="information__blocks">
-          <div class="block-info"><img src="./blocks/b-information/b-information/sprites/Monitor.svg" alt="monitor">
+          <div class="information__blocks-block"><img src="./blocks/b-information/b-information/sprites/Monitor.svg" alt="Monitor.svg">
             <h5>Преимущество 1</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.</span>
           </div>
-          <div class="block-info"><img src="./blocks/b-information/b-information/sprites/Magic_wand.svg" alt="magic wand">
+          <div class="information__blocks-block"><img src="./blocks/b-information/b-information/sprites/Magic_wand.svg" alt="Magic_wand.svg">
             <h5>Преимущество 2</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.</span>
           </div>
-          <div class="block-info"><img src="./blocks/b-information/b-information/sprites/Rocket.svg" alt="rocket">
+          <div class="information__blocks-block"><img src="./blocks/b-information/b-information/sprites/Rocket.svg" alt="Rocket.svg">
             <h5>Преимущество 3</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.</span>
           </div>
-          <div class="block-info"><img src="./blocks/b-information/b-information/sprites/Globe-2.svg" alt="globe">
+          <div class="information__blocks-block"><img src="./blocks/b-information/b-information/sprites/Globe-2.svg" alt="Globe-2.svg">
             <h5>Преимущество 4</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.</span>
           </div>
-          <div class="block-info"><img src="./blocks/b-information/b-information/sprites/Settings.svg" alt="settings">
+          <div class="information__blocks-block"><img src="./blocks/b-information/b-information/sprites/Settings.svg" alt="Settings.svg">
             <h5>Преимущество 5</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.</span>
           </div>
-          <div class="block-info"><img src="./blocks/b-information/b-information/sprites/Layers.svg" alt="layers">
+          <div class="information__blocks-block"><img src="./blocks/b-information/b-information/sprites/Layers.svg" alt="Layers.svg">
             <h5>Преимущество 6</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.</span>
           </div>
-          <div class="block-info"><img src="./blocks/b-information/b-information/sprites/Wrench.svg" alt="wrench">
+          <div class="information__blocks-block"><img src="./blocks/b-information/b-information/sprites/Wrench.svg" alt="Wrench.svg">
             <h5>Преимущество 7</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.</span>
           </div>
-          <div class="block-info"><img src="./blocks/b-information/b-information/sprites/Note.svg" alt="note">
+          <div class="information__blocks-block"><img src="./blocks/b-information/b-information/sprites/Note.svg" alt="Note.svg">
             <h5>Преимущество 8</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, architecto, vero.</span>
           </div>
         </div>
@@ -179,43 +185,43 @@
         </div>
         <div class="container-reviews">
           <div class="reviews-blocks">
-            <div class="block-left">
-              <div class="left-address"><span>Наш адрес</span>
+            <div class="reviews-blocks__block-left">
+              <div class="reviews-blocks__address"><span>Наш адрес</span>
                 <p>г.Минск, ул. Скрыганова, 6А, 4 этаж</p>
               </div>
-              <div class="left-phones"><span>Звоните</span>
+              <div class="reviews-blocks__phones"><span>Звоните</span>
                 <p>+375 (29) 123-45-67,  +375 (33) 123-45-67</p>
               </div>
-              <div class="left-email"><span>Пишите</span>
+              <div class="reviews-blocks__email"><span>Пишите</span>
                 <p>info@promo-webcom.by</p>
               </div>
             </div>
-            <div class="block-right">
-              <form action="" novalidate>
-                <div class="right-name">
+            <div class="reviews-blocks__block-right">
+              <form class="review-form" action="" name="form" novalidate>
+                <div class="review-form__name">
                   <label for="name">Ваше имя</label>
                   <input type="text" name="name" placeholder="Иванов Иван">
                 </div>
-                <div class="right-email">
+                <div class="review-form__email">
                   <label for="email">E-mail</label>
                   <input type="text" name="email" placeholder="example@mysite.com">
                 </div>
-                <div class="right-office">
+                <div class="review-form__office">
                   <label for="office">Ваша должность</label>
                   <input type="text" name="office" placeholder="Должность">
                 </div>
-                <div class="right-review">
+                <div class="review-form__review">
                   <label for="review">Отзыв</label>
                   <textarea type="text" name="review" rows="5" placeholder="Ваше сообщение" resize></textarea>
                 </div>
-                <div class="right-photo"><a class="button button-size-s btn-rev" href="#">+</a><span>Фото</span></div>
-                <div class="right-capcha">
-                  <div class="capcha-in">
+                <div class="review-form__photo"><a class="swiper-slide__button review-form__button_size_s review-form__button-add" href="#">+</a><span>Фото</span></div>
+                <div class="review-form__capcha">
+                  <div class="review-form__capcha-in">
                     <label for="capcha">Введите код с картинки</label>
                     <input type="text" name="capcha">
                   </div>
-                  <div class="capcha-btn"><img src="./blocks/b-reviews/b-reviews/capcha.png" alt="capcha">
-                    <button class="button button-size-m btn-form" type="button" onclick="validate(this.form)">Отправить</button>
+                  <div class="review-form__capcha-btn"><img src="./blocks/b-reviews/b-reviews/capcha.png" alt="capcha">
+                    <button class="swiper-slide__button review-form__button_size_m review-form__button-submit" type="button" onclick="validate(this.form)">Отправить</button>
                   </div>
                 </div>
               </form>
@@ -228,13 +234,13 @@
       <div class="footer">
         <div class="container">
           <div class="footer-blocks">
-            <div class="block-left text-left"><a href="#"><img src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo"></a><img src="./blocks/b-jobs/b-jobs/separator.png" alt="">
+            <div class="footer-blocks__block-left text-left"><a href="#"><img src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo"></a><img src="./blocks/b-jobs/b-jobs/separator.png" alt="">
               <p class="text-left">Дисклеймер компании</p>
             </div>
-            <div class="block-center text-center"><span>Мы в соцсетях</span><img src="./blocks/b-jobs/b-jobs/separator.png" alt="">
-              <div class="social"><a href="#"><img src="./blocks/b-footer/b-footer/sprites/instagram.png" alt="instagram"></a><a href="#"><img src="./blocks/b-footer/b-footer/sprites/twitter.png" alt="twitter"></a><a href="#"><img src="./blocks/b-footer/b-footer/sprites/facebook.png" alt="facebook"></a></div>
+            <div class="footer-blocks__block-center text-center"><span>Мы в соцсетях</span><img src="./blocks/b-jobs/b-jobs/separator.png" alt="">
+              <div class="footer-blocks__social"><a href="#"><img src="./blocks/b-footer/b-footer/sprites/instagram.png" alt="instagram"></a><a href="#"><img src="./blocks/b-footer/b-footer/sprites/twitter.png" alt="twitter"></a><a href="#"><img src="./blocks/b-footer/b-footer/sprites/facebook.png" alt="facebook"></a></div>
             </div>
-            <div class="block-right text-right"><span>Адрес</span><img src="./blocks/b-jobs/b-jobs/separator.png" alt="">
+            <div class="footer-blocks__block-right text-right"><span>Адрес</span><img src="./blocks/b-jobs/b-jobs/separator.png" alt="">
               <p>г. Минск, ул. Скрыганова, 6А, 4 этаж</p>
             </div>
           </div>
@@ -244,20 +250,21 @@
         <div class="container"><span>Copyrights 2015 &copy; Webcom Media</span></div>
       </div>
     </footer>
-    <div class="navpagination"><a id="pag-navmain" href="#navmain"></a><a id="pag-navjobs" href="#navjobs"></a><a id="pag-navinformation" href="#navinformation"></a><a id="pag-navreviews" href="#navreviews"></a><a id="pag-navreviews" href="#navreviews"></a></div><a id="btn-toTop" title="Наверх"><img src="./blocks/b-footer/b-footer/sprites/btn-toTop.png" alt="наверх"></a>
+    <div class="navpagination"><a id="pag-navmain" href="#navmain"></a><a id="pag-navjobs" href="#navjobs"></a><a id="pag-navinformation" href="#navinformation"></a><a id="pag-navreviews" href="#navreviews"></a><a id="pag-navreviews" href="#navreviews"></a>
+    </div><a id="btn-toTop" title="Наверх"><img src="./blocks/b-footer/b-footer/sprites/btn-toTop.png" alt="наверх"></a>
     <div class="modal" id="myModal">
-      <div class="modal-content text-center"><span class="close" id="close">&times;</span>
+      <div class="modal-content text-center"><span class="modal-content__close" id="close">&times;</span>
         <h4 class="text-center">Оформить заявку</h4>
         <form action="">
-          <div class="input-name">
+          <div class="modal-content__input-name">
             <label for="name">Ваше имя</label>
             <input type="text" name="name" placeholder="Иванов Иван">
           </div>
-          <div class="input-phone">
+          <div class="modal-content__input-phone">
             <label for="phone">Телефон</label>
             <input type="text" name="phone" placeholder="+375 (44) 123-45-67">
           </div>
-          <button class="button button-size-x btn-modal" type="button" onclick="validate(this.form)">Отправить</button>
+          <button class="swiper-slide__button modal-content__button_size_x modal-content__button-modal" type="button" onclick="validate(this.form)">Отправить</button>
         </form>
       </div>
     </div>
