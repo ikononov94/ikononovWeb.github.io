@@ -1,14 +1,14 @@
     function showError(container, errorMessage) {
-    container.className = 'error';
+    container.className = 'form__input_error';
     var msgElem = document.createElement('span');
-    msgElem.className = "error-message";
+    msgElem.className = "form__input_error-message";
     msgElem.innerHTML = errorMessage;
     container.appendChild(msgElem);
   }
 
     function resetError(container) {
       container.className = '';
-      if (container.lastChild.className == "error-message") {
+      if (container.lastChild.className == "form__input_error-message") {
         container.removeChild(container.lastChild);
       }
     }

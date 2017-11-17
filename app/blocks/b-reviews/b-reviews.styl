@@ -8,106 +8,109 @@
 	flex-decoration row
 	flex-wrap nowrap
 	flex 1
-	span
-	label
-		font-size 1.7rem
-		text-transform uppercase
-		display block
-		font-weight 700
-	p
-		color #999999
+.reviews-blocks__head
+.reviews-blocks__label
+	font-size 1.7rem
+	text-transform uppercase
+	display block
+	font-weight 700
+.reviews-blocks__description
+	color #999999
+	font-size 1.3rem
+	font-weight 700
+.reviews-blocks__left
+	width 80%
+.reviews-blocks__head
+	color btncolor
+.reviews-blocks__right
+	width 100%
+.reviews-blocks__label
+	color bgcolorMF
+.reviews-blocks__input
+.reviews-blocks__textarea
+	margin 1.3em 0 1.3em 0
+	width 100%
+	outline none
+	border 0
+	border-bottom 1px solid #e5e5e5
+	font-size 1.3rem
+	color #999999
+	&::placeholder
 		font-size 1.3rem
-		font-weight 700
-	.reviews-blocks__block-left
-		width 80%
-		span
-			color btncolor
-	.reviews-blocks__block-right
-		width 100%
-		label
-			color bgcolorMF
-		input
-		textarea
-			margin 1.3em 0 1.3em 0
-			width 100%
-			outline none
-			border 0
-			border-bottom 1px solid #e5e5e5
-			font-size 1.3rem
-			color #999999
-			&::placeholder
-				font-size 1.3rem
-				color #999999
-				font-style italic
-		textarea
-			resize none
-		.reviews-blocks-photo
-			padding-bottom 1.3em
-			span
-				line-height 2.3
-		.reviews-blocks-capcha
-			.review-form__capcha-in
-				width 55%
-			
-			.review-form__capcha-btn
-				display flex
-				flex-direction row
-				justify-content space-between
-				align-items flex-end
-				
-.error-message
-	color red !important
-	font-size 1rem !important
-.error
-	input
-	textarea
-		border-bottom 1px solid red !important
-		
-.review-form__button_size_s
+		color #999999
+		font-style italic
+.reviews-blocks__textarea
+	resize none
+.reviews-blocks__right-photo
+	padding-bottom 1.3em
+.reviews-blocks__right-photo-span
+	line-height 2.3
+	font-size 1.7rem
+	text-transform uppercase
+	font-weight 700
+	color bgcolorMF
+.reviews-blocks__right-capcha-in
+	width 55%
+.reviews-blocks__right-capcha-btn
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items flex-end	
+.reviews-blocks__button_size_s
 	border 0
 	font-size 2.14rem
 	padding 10px 15px
 	outline none
 	cursor pointer
-.review-form__button_size_m
+.reviews-blocks__button_size_m
 	border 0
 	font-size 1.3rem
 	letter-spacing 1px
 	padding 20px 45px
 	outline none
 	cursor pointer
-.review-form__button-add
+.reviews-blocks__button-add
 	float left
 	margin-right 20px
 	
-.review-form__button-submit
+.reviews-blocks__button-submit
 	float right
+
+.form__input_error-message
+	color red !important
+	font-size 1rem !important
+	display block
+.form__input_error
+	input
+	textarea
+		border-bottom 1px solid red !important
 	
 @media (max-width 320px)
 	.reviews-blocks
 		flex-direction column
-		.reviews-blocks__block-right
-			width 80%
-			margin 0 0 0 20px
-			.review-form__photo
-				span
-					line-height 40px
-	.review-form__button_size_m
+	.reviews-blocks__right
+		width 80%
+		margin 0 0 0 20px
+	.reviews-blocks__left
+		margin 0 0 0 20px
+	.reviews-blocks__right-photo-span
+		line-height 40px
+	.reviews-blocks__button_size_m
 		padding 10px 22.5px
 
 @media (min-width 321px) and (max-width 480px)
 	.reviews-blocks
 		flex-direction column
-		.reviews-blocks__block-right
-			width 80%
-			margin 0 0 0 20px
-			.review-form__photo
-				span
-					line-height 40px
-	.review-form__button_size_m 
+	.reviews-blocks__right
+		width 80%
+		margin 0 0 0 20px
+	.reviews-blocks__left
+		margin 0 0 0 20px
+	.reviews-blocks__right-photo-span
+		line-height 40px
+	.reviews-blocks__button_size_m 
 		padding 10px 22.5px
 		
 @media (min-width 768px) and (max-width 768px)
-	.reviews-blocks
-		.reviews-blocks__block-right
-			width 50%
+	.reviews-blocks__right
+		width 50%

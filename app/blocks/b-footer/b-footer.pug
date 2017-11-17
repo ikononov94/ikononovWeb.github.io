@@ -4,49 +4,49 @@ footer#navfooter
 	.footer
 		.container
 			.footer-blocks
-				.footer-blocks__block-left.text-left
-					a(href="#")
-						img(src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo")
-					img(src="./blocks/b-jobs/b-jobs/separator.png" alt="" class="")
-					p(class="text-left") Дисклеймер компании
+				.footer-blocks__left.text-left
+					a(class="footer-blocks__left-link" href="#")
+						img(class="footer-blocks__left-icon" src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo")
+					img(class="footer-blocks__left-icon" src="./blocks/b-jobs/b-jobs/separator.png" alt="")
+					p(class="footer-blocks__description" class="text-left") Дисклеймер компании
 					
-				.footer-blocks__block-center.text-center
-					span Мы в соцсетях
-					img(src="./blocks/b-jobs/b-jobs/separator.png" alt="")
-					.footer-blocks__social
-						a(href="#")
-							img(src="./blocks/b-footer/b-footer/sprites/instagram.png" alt="instagram")
-						a(href="#")
-							img(src="./blocks/b-footer/b-footer/sprites/twitter.png" alt="twitter")
-						a(href="#")
-							img(src="./blocks/b-footer/b-footer/sprites/facebook.png" alt="facebook")
+				.footer-blocks__center.text-center
+					span(class="footer-blocks__head footer-blocks__center-head") Мы в соцсетях
+					img(class="footer-blocks__center-icon" src="./blocks/b-jobs/b-jobs/separator.png" alt="")
+					.footer-blocks__center-social
+						a(class="footer-blocks__center-social-link" href="#")
+							img(class="footer-blocks__center-social-icon" src="./blocks/b-footer/b-footer/sprites/instagram.png" alt="instagram")
+						a(class="footer-blocks__center-social-link" href="#")
+							img(class="footer-blocks__center-social-icon" src="./blocks/b-footer/b-footer/sprites/twitter.png" alt="twitter")
+						a(class="footer-blocks__center-social-link" href="#")
+							img(class="footer-blocks__center-social-icon" src="./blocks/b-footer/b-footer/sprites/facebook.png" alt="facebook")
 					
-				.footer-blocks__block-right.text-right
-					span Адрес
-					img(src="./blocks/b-jobs/b-jobs/separator.png" alt="")
-					p г. Минск, ул. Скрыганова, 6А, 4 этаж
+				.footer-blocks__right.text-right
+					span(class="footer-blocks__head footer-blocks__right-head") Адрес
+					img(class="footer-blocks__right-icon" src="./blocks/b-jobs/b-jobs/separator.png" alt="")
+					p(class="footer-blocks__description footer-blocks__right-description") г. Минск, ул. Скрыганова, 6А, 4 этаж
 					
 	.footer-end.text-center
 		.container
 			span Copyrights 2015 &copy; Webcom Media
 
-.navpagination
+.nav-pagination
 	-for (var i = 0; i < footer_a.length; i++) {
-		a(id=footer_a_id[i] href=footer_a[i])
+		a(id=footer_a_id[i] href=footer_a[i] class="nav-pagination__link")
 	-}
 
-a(id="btn-toTop" title="Наверх")
-	img(src="./blocks/b-footer/b-footer/sprites/btn-toTop.png" alt="наверх")
+a(id="btn-toTop" class="btn-toTop" title="Наверх")
+	img(class="btn-toTop__icon" src="./blocks/b-footer/b-footer/sprites/btn-toTop.png" alt="наверх")
 
 #myModal.modal
 	.modal-content.text-center
 		span#close.modal-content__close &times;
-		h4.text-center Оформить заявку
+		h4(class="modal-content__head").text-center Оформить заявку
 		form(action="")
-			.modal-content__input-name
-				label(for="name") Ваше имя
-				input(type="text" name="name" placeholder="Иванов Иван")
-			.modal-content__input-phone
-				label(for="phone") Телефон
-				input(type="text" name="phone" placeholder="+375 (44) 123-45-67")
-			button(type="button" onclick="validate(this.form)" class="swiper-slide__button modal-content__button_size_x modal-content__button-modal") Отправить
+			.modal-content__name
+				label(class="modal-content__label" for="name") Ваше имя
+				input(class="modal-content__input" type="text" name="name" placeholder="Иванов Иван")
+			.modal-content__phone
+				label(class="modal-content__label" for="phone") Телефон
+				input(class="modal-content__input" type="text" name="phone" placeholder="+375 (44) 123-45-67")
+			button(type="button" onclick="validate(this.form)" class="button modal-content__button_size_x modal-content__button-modal") Отправить

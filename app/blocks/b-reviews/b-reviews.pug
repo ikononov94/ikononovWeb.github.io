@@ -1,43 +1,42 @@
 section#navreviews.reviews
 	.container
 		.section__title
-				h2(class="reviews-h2") Оставьте отзыв
-				span
-					img(src="./blocks/b-jobs/b-jobs/separator.png" alt="")
-				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis blanditiis similique libero, vero doloribus, beatae quis laudantium obcaecati. Eligendi ab expedita, libero quo nisi iure sed eius aut earum commodi.
+				h2(class="section__title-head") Оставьте отзыв
+				img(class="section__title-icon" src="./blocks/b-jobs/b-jobs/separator.png" alt="")
+				p(class="section__title-description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis blanditiis similique libero, vero doloribus, beatae quis laudantium obcaecati. Eligendi ab expedita, libero quo nisi iure sed eius aut earum commodi.
 		.container-reviews
 			.reviews-blocks
-				.reviews-blocks__block-left
-					.reviews-blocks__address
-						span Наш адрес
-						p г.Минск, ул. Скрыганова, 6А, 4 этаж
-					.reviews-blocks__phones
-						span Звоните
-						p +375 (29) 123-45-67,  +375 (33) 123-45-67
-					.reviews-blocks__email
-						span Пишите
-						p info@promo-webcom.by
-				.reviews-blocks__block-right
-					form(action="" name="form" class="review-form" novalidate)
-						.review-form__name
-							label(for="name") Ваше имя
-							input(type="text" name="name" placeholder="Иванов Иван")
-						.review-form__email
-							label(for="email") E-mail
-							input(type="text" name="email" placeholder="example@mysite.com")
-						.review-form__office
-							label(for="office") Ваша должность
-							input(type="text" name="office" placeholder="Должность")
-						.review-form__review
-							label(for="review") Отзыв
-							textarea(type="text" name="review" rows="5" placeholder="Ваше сообщение" resize )
-						.review-form__photo
-							a(href="#" class="swiper-slide__button review-form__button_size_s review-form__button-add") +
-							span Фото
-						.review-form__capcha
-							.review-form__capcha-in
-								label(for="capcha") Введите код с картинки
-								input(type="text" name="capcha")
-							.review-form__capcha-btn
+				.reviews-blocks__left
+					.reviews-blocks__left-address
+						span(class="reviews-blocks__head") Наш адрес
+						p(class="reviews-blocks__description") г.Минск, ул. Скрыганова, 6А, 4 этаж
+					.reviews-blocks__left-phones
+						span(class="reviews-blocks__head") Звоните
+						p(class="reviews-blocks__description")  +375 (29) 123-45-67,  +375 (33) 123-45-67
+					.reviews-blocks__left-email
+						span(class="reviews-blocks__head") Пишите
+						p(class="reviews-blocks__description")  info@promo-webcom.by
+				.reviews-blocks__right
+					form(action="" name="form" novalidate)
+						.reviews-blocks__right-name
+							label(class="reviews-blocks__label" for="name") Ваше имя
+							input(class="reviews-blocks__input" type="text" name="name" placeholder="Иванов Иван")
+						.reviews-blocks__right-email
+							label(class="reviews-blocks__label" for="email") E-mail
+							input(class="reviews-blocks__input" type="text" name="email" placeholder="example@mysite.com")
+						.reviews-blocks__right-office
+							label(class="reviews-blocks__label" for="office") Ваша должность
+							input(class="reviews-blocks__input" type="text" name="office" placeholder="Должность")
+						.reviews-blocks__right-review
+							label(class="reviews-blocks__label" for="review") Отзыв
+							textarea(class="reviews-blocks__textarea" type="text" name="review" rows="5" placeholder="Ваше сообщение" resize )
+						.reviews-blocks__right-photo
+							a(href="#" class="button reviews-blocks__button_size_s reviews-blocks__button-add") +
+							span(class="reviews-blocks__right-photo-span") Фото
+						.reviews-blocks__right-capcha
+							.reviews-blocks__right-capcha-in
+								label(class="reviews-blocks__label" for="capcha") Введите код с картинки
+								input(class="reviews-blocks__input" type="text" name="capcha")
+							.reviews-blocks__right-capcha-btn
 								img(src="./blocks/b-reviews/b-reviews/capcha.png" alt="capcha")
-								button(type="button" onclick="validate(this.form)" class="swiper-slide__button review-form__button_size_m review-form__button-submit") Отправить
+								button(type="button" onclick="validate(this.form)" class="button reviews-blocks__button_size_m reviews-blocks__button-submit") Отправить

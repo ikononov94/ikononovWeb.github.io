@@ -5,39 +5,36 @@
 	display flex
 	flex-direction row
 	justify-content space-between
-	span
-		display block
-		color #fff
-		font-size 1.14rem
-		font-weight 700
-		text-transform uppercase
-	p
-		color #fff
-		font-size 1rem
+.footer-blocks__head
+	display block
+	color #fff
+	font-size 1.14rem
+	font-weight 700
+	text-transform uppercase
+.footer-blocks__description
+	color #fff
+	font-size 1rem
 
-	.footer-blocks__block-left
-		img
-			margin-bottom 20px
-		a
-			display block
-	.footer-blocks__block-center
-	.footer-blocks__block-right
-		span
-			margin-bottom 40px
-		img
-			margin-bottom 20px
-		p 
-			margin 0
-			width 200px
-			text-align right
-	.footer-blocks__block-center
-		.footer-blocks__social
-			img
-				margin 0 10px
-				transform rotate(0deg)
-				transition all .5s ease
-				&:hover
-					transform rotate(360deg)
+
+.footer-blocks__left-link
+	display block
+.footer-blocks__center-head
+.footer-blocks__right-head
+	margin-bottom 40px
+.footer-blocks__center-icon
+.footer-blocks__right-icon
+.footer-blocks__left-icon
+	margin-bottom 20px
+.footer-blocks__right-description
+	margin 0
+	width 200px
+	text-align right
+.footer-blocks__center-social-icon
+	margin 0 10px
+	transform rotate(0deg)
+	transition all .5s ease
+	&:hover
+		transform rotate(360deg)
 		
 .text-left
 	text-align left
@@ -56,7 +53,7 @@
 	letter-spacing 2px
 	border-bottom 2px solid btncolor
 	
-#btn-toTop
+.btn-toTop
 	padding 5px 10px
 	border 2px solid btncolor
 	position fixed
@@ -71,23 +68,23 @@
 		background-color bgcolorMF
 		border 2px solid bgcolorMF
 
-.navpagination
+.nav-pagination
 	position fixed
 	bottom 43%
 	right 20px
 	z-index 999
-	a
-		display block
-		width 18px
-		height 18px
-		background-color bgcolorMF
-		border-radius 50%
-		margin-bottom 10px	
-		cursor pointer
-		opacity .5
-	.pag-active
-		background-color btncolor
-		opacity 1
+.nav-pagination__link
+	display block
+	width 18px
+	height 18px
+	background-color bgcolorMF
+	border-radius 50%
+	margin-bottom 10px	
+	cursor pointer
+	opacity .5
+.nav-pagination__link_active
+	background-color btncolor
+	opacity 1
 
 .modal
 	display none
@@ -99,34 +96,33 @@
 	overflow hidden
 	background-color rgba(0,0,0, 0.8)
 	z-index 9999
-	&-content
-		position relative
-		background-color #fefefe
-		margin 10% auto
-		padding 20px
-		border 1px solid #888
-		width 20%
-		border-radius 10px
-		h4
-			text-transform uppercase
-			margin-top 0
-			font-size  2rem
-		label
-		span
-			display block
-			text-align center
-			padding 10px
-			text-transform uppercase
-			font-weight 700
-			font-size 1.2rem
-		input
-			outline none
-			border none
-			border-bottom 1px solid #e5e5e5
-			width 80%
-			&::placeholder
-				font-style italic
-				padding 0 0 0 10px
+.modal-content
+	position relative
+	background-color #fefefe
+	margin 10% auto
+	padding 20px
+	border 1px solid #888
+	width 20%
+	border-radius 10px
+.modal-content__head
+	text-transform uppercase
+	margin-top 0
+	font-size  2rem
+.modal-content__label
+	display block
+	text-align center
+	padding 10px
+	text-transform uppercase
+	font-weight 700
+	font-size 1.2rem
+.modal-content__input
+	outline none
+	border none
+	border-bottom 1px solid #e5e5e5
+	width 80%
+	&::placeholder
+		font-style italic
+		padding 0 0 0 10px
 .modal-content__button-modal
 	margin 10px	
 	padding 10px 20px		
@@ -141,9 +137,9 @@
 	cursor pointer
 	
 @media (max-width 1024px)
-	.footer-blocks__block-left
+	.footer-blocks__left
 		margin-left 20px
-	.footer-blocks__block-right
+	.footer-blocks__right
 		margin-right 20px
 	.modal-content
 		width 40%
@@ -151,34 +147,32 @@
 @media (max-width 480px)
 	.modal-content
 		width 70%
-	.navpagination
+	.nav-pagination
 		display none
 	.footer-blocks
 		flex-wrap wrap
-		span
-			font-size 1.4rem
-		p
-			font-size 1.4rem
-		.footer-blocks__block-left
-			img
-				margin-bottom 10px
-			a
-				img
-					width 70%
-		.footer-blocks__block-center
-		.footer-blocks__block-right
-			span
-				margin-bottom 50px !important
-			img
-				margin-bottom 20px !important
-		.footer-blocks__block-right
-			margin-left 20px 
-			text-align left
-			p
-				text-align left !important
+	.footer-blocks__head
+	.footer-blocks__description
+		font-size 1.4rem
+		font-size 1.4rem
+	.footer-blocks__left-icon
+		margin-bottom 10px
+	.footer-blocks__left-link
+		.footer-blocks__left-icon
+			width 70%
+	.footer-blocks__center-head
+	.footer-blocks__right-head
+		margin-bottom 50px !important
+	.footer-blocks__center-icon
+	.footer-blocks__right-icon 
+		margin-bottom 20px !important
+	.footer-blocks__right
+		margin-left 20px 
+		text-align left
+	.footer-blocks__right-description
+		text-align left !important
 
 @media (min-width 321px) and (max-width 480px)
-	.footer-blocks
-		.footer-blocks__block-center
-			margin-right 20px
+	.footer-blocks__center
+		margin-right 20px
 	

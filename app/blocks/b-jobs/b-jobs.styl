@@ -7,19 +7,19 @@
 	margin 0 auto
 	text-align center
 	padding 60px 0
-	h2
-		margin 0
-		font-size 3.06rem
-		text-transform uppercase
-		letter-spacing .6rem
-		color bgcolorMF
-		font-weight 100
-	img
-		padding 25px 0
-	p
-		margin 0
-		color #8198a0
-		font-size 1.3rem
+.section__title-head
+	margin 0
+	font-size 3.06rem
+	text-transform uppercase
+	letter-spacing .6rem
+	color bgcolorMF
+	font-weight 100
+.section__title-icon
+	padding 25px 0
+.section__title-description
+	margin 0
+	color #8198a0
+	font-size 1.3rem
 		
 .jobs-blocks
 	display flex
@@ -36,14 +36,14 @@
 	&:hover > .jobs-blocks__block-hidden
 		opacity 1
 		transform translateY(0)
-	.jobs-blocks__logo
-		display block
-		position absolute
-		top 0
-		bottom 0
-		right 0
-		left 0
-		margin auto
+.jobs-blocks__logo
+	display block
+	position absolute
+	top 0
+	bottom 0
+	right 0
+	left 0
+	margin auto
 		
 .jobs-blocks__block-hidden
 	width 100%
@@ -54,32 +54,31 @@
 	bottom 0
 	transition all .3s ease
 	transform translateY(-200px)
-	h5
-		margin 0
-		font-size 1.3rem
-		color bgcolorMF
-		text-transform uppercase
-		padding 15px 0 10px 55px
-	p
-		color #7b7b7b
-		text-transform uppercase
-		font-size 1.14rem
-		margin 0
-		padding 10px 0 15px 55px
-	span
-		padding-left 55px
+.jobs-blocks__block-hidden-head
+	margin 0
+	font-size 1.3rem
+	color bgcolorMF
+	text-transform uppercase
+	padding 15px 0 10px 55px
+.jobs-blocks__block-hidden-description
+	color #7b7b7b
+	text-transform uppercase
+	font-size 1.14rem
+	margin 0
+	padding 10px 0 15px 55px
+.jobs-blocks__block-hidden-icon
+	padding-left 55px
 
 
 @media (max-width 1024px)
 	.jobs-blocks__block
 		height 350px
-	.jobs-blocks__block-hidden
-		h5
-			font-size 1.07rem
-			padding-left 20px
-		p
-			font-size 0.93rem
-			padding-left 20px
+	.jobs-blocks__block-hidden-head
+		font-size 1.07rem
+		padding-left 20px
+	.jobs-blocks__block-hidden-description
+		font-size 0.93rem
+		padding-left 20px
 
 				
 @media (min-width 481px) and (max-width 768px)

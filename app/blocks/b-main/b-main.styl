@@ -14,7 +14,6 @@
 	height 100%
 	position relative
 	
-
 .swiper-button-prev
 	background-image url("../../blocks/b-main/b-main/arrow-prev.png")
 	left 6%
@@ -40,10 +39,10 @@
 	margin 0 auto
 	text-transform uppercase
 	letter-spacing 1.43rem
-	h1
-		font-size 3.1rem
-		margin 0
-		padding-bottom 35px
+.main-title__head
+	font-size 3.1rem
+	margin 0
+	padding-bottom 35px
 .title-delimiter
 	position relative
 	display flex
@@ -64,7 +63,7 @@
 		left 5px
 		margin 0 -100% 0 0 
 
-.main-description
+.swiper__description
 	font-size 1.7rem
 	text-transform uppercase
 	line-height 2
@@ -73,7 +72,7 @@
 	margin 0 auto
 	padding 40px 0 175px
 	
-.swiper-slide__button
+.button
 	position relative
 	text-transform uppercase
 	background-color btncolor
@@ -84,40 +83,39 @@
 	border none
 	cursor pointer
 	outline none
-	&_size_l
-		font-size 1.8rem
-		letter-spacing 2px
-		font-weight 700
-		padding 20px 30px
 	&:hover
 		background-color darken(btncolor, 20%)
-
+.swiper-slide__button_size_l
+	font-size 1.8rem
+	letter-spacing 2px
+	font-weight 700
+	padding 20px 30px
 .swiper__button-bottom
 	position absolute
 	text-align center
 	bottom 50px
 	width 100%
 	z-index 999
-	a
-		display block
-		width 50px
-		height 50px
-		margin 0 auto
-		border-radius 50%
-		background-color rgba(bgcolorFb, 0.7)
-		cursor pointer
+.swiper__button-bottom-link
+	display block
+	width 50px
+	height 50px
+	margin 0 auto
+	border-radius 50%
+	background-color rgba(bgcolorFb, 0.7)
+	cursor pointer
+	&:hover > .swiper__button-bottom-icon
+		animation btn-bottom 1.5s ease-in-out infinite
+.swiper__button-bottom-icon
+	display block
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+	margin auto
+	animation-play-state paused
 		
-		img
-			display block
-			position absolute
-			top 0
-			left 0
-			right 0
-			bottom 0
-			margin auto
-			animation-play-state paused
-		&:hover > img
-			animation btn-bottom 1.5s ease-in-out infinite
 	
 @keyframes btn-bottom
 	0% 
@@ -150,7 +148,7 @@
 	.swiper-pagination-fraction
 		bottom 100px
 		
-	.btn-bottom
+	.swiper__button-bottom
 		bottom 10px
 @media (min-width 481px) and (max-width 920px)
 	.swiper
@@ -162,5 +160,5 @@
 	.swiper-pagination-fraction
 		bottom 120px
 		
-	.btn-bottom
+	.swiper__button-bottom
 		bottom 50px

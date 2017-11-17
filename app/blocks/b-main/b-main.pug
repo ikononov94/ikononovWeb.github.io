@@ -1,11 +1,11 @@
 mixin swiper-slide(h1)
 	.swiper-slide 
 		.main-title
-			h1=h1
+			h1(class="main-title__head")=h1
 			.title-delimiter
-				img(src="./blocks/b-main/b-main/delimiter.png" alt="")
-		h4(class="main-description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?
-		button(id="openModal" class="swiper-slide__button swiper-slide__button_size_l") Оформить заявку
+				img(class="main-title__icon" src="./blocks/b-main/b-main/delimiter.png" alt="")
+		h4(class="swiper__description")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad necessitatibus impedit, tenetur, quo eveniet accusantium. Quis, reiciendis fugit?
+		button(id="openModal" class="button swiper-slide__button_size_l") Оформить заявку
 section#navmain.swiper
 	.swiper-container
 		.swiper-wrapper
@@ -20,6 +20,6 @@ section#navmain.swiper
 		.swiper-button-next
 		.swiper-button-prev
 		.swiper__button-bottom
-			a(href="#navjobs")
-				img(src="./blocks/b-main/b-main/sprites/arrow.svg" alt="вниз")
+			a(class="swiper__button-bottom-link" href="#navjobs")
+				img(class="swiper__button-bottom-icon" src="./blocks/b-main/b-main/sprites/arrow.svg" alt="вниз")
 

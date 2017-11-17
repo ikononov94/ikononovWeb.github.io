@@ -4,32 +4,32 @@ nav#nav.nav
 	.container
 		.nav-blocks
 			.nav-blocks__logo
-				a(href="#")
-					img(src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo")
+				a(class="nav-blocks__logo-link" href="#")
+					img(class="nav-blocks__logo-icon" src="./blocks/b-nav_menu/b-nav_menu/logo.png" alt="logo")
 			
 			.nav-blocks__menu
 				ul.nav-blocks__menu-ul
 					- for (var i = 0; i < nav_a.length; i++) {
-						li
-							a(href=nav_a[i])=a_name[i]
+						li(class="nav-blocks__menu-li")
+							a(class="nav-blocks__menu-link" href=nav_a[i])=a_name[i]
 					- }
 					
 			.nav-blocks__phone
-				a(href="tel:+375291234567") +375(29)123-45-67
-				a(href="tel:+375291234567") +375(29)123-45-67
+				a(class="nav-blocks__phone-link" href="tel:+375291234567") +375(29)123-45-67
+				a(class="nav-blocks__phone-link" href="tel:+375291234567") +375(29)123-45-67
 
 			.nav-burg#nav-burg
-				.nav-burg__span
-					a(href="##")
+				.nav-burg__item
+					a(class="nav-burg__item-link" href="##")
 						span
 						span
 						span
 
-		.menu-hidden#menu-hidden
-			ul.menu-hidden__ul
-				- for (var i = 0; i < nav_a.length; i++) {
-					li
-						a(href=nav_a[i])=a_name[i]
-				- }
+	.menu-hidden.nav__menu-hidden#menu-hidden
+		ul.menu-hidden__ul
+			- for (var i = 0; i < nav_a.length; i++) {
+				li(class="menu-hidden__li")
+					a(class="menu-hidden__link" href=nav_a[i])=a_name[i]
+			- }
 
 
